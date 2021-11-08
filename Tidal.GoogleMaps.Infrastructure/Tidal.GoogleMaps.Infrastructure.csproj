@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tidal.GoogleMaps.Contracts\Tidal.GoogleMaps.Contracts.csproj" />
+    <ProjectReference Include="..\Tidal.GoogleMaps.DB\Tidal.GoogleMaps.DB.csproj" />
+    <ProjectReference Include="..\Tidal.GoogleMaps.Shared\Tidal.GoogleMaps.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -3,7 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tidal.GoogleMaps", "Tidal.GoogleMaps\Tidal.GoogleMaps.csproj", "{6A928253-AB7A-4563-8928-94B62731B3E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tidal.GoogleMaps", "Tidal.GoogleMaps\Tidal.GoogleMaps.csproj", "{6A928253-AB7A-4563-8928-94B62731B3E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5} = {3EC98299-B956-403B-ABA2-DB199CB24EC5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tidal.GoogleMaps.DB", "Tidal.GoogleMaps.DB\Tidal.GoogleMaps.DB.csproj", "{E2ABB8EE-8066-4447-A16F-03C5E4BDE46C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5} = {3EC98299-B956-403B-ABA2-DB199CB24EC5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tidal.GoogleMaps.Infrastructure", "Tidal.GoogleMaps.Infrastructure\Tidal.GoogleMaps.Infrastructure.csproj", "{725061F9-DD59-48DB-AC82-9B93962953F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tidal.GoogleMaps.Shared", "Tidal.GoogleMaps.Shared\Tidal.GoogleMaps.Shared.csproj", "{3EC98299-B956-403B-ABA2-DB199CB24EC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tidal.GoogleMaps.Business", "Tidal.GoogleMaps.Business\Tidal.GoogleMaps.Business.csproj", "{B16501CE-C2D5-4085-9656-FBF0D67A0DEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5} = {3EC98299-B956-403B-ABA2-DB199CB24EC5}
+		{725061F9-DD59-48DB-AC82-9B93962953F8} = {725061F9-DD59-48DB-AC82-9B93962953F8}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tidal.GoogleMaps.Contracts", "Tidal.GoogleMaps.Contracts\Tidal.GoogleMaps.Contracts.csproj", "{775AB219-5608-4BA3-B35D-25A2E09E6705}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED74EC25-5671-46CD-A810-DA6D07D1F695} = {ED74EC25-5671-46CD-A810-DA6D07D1F695}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tidal.GoogleMaps.Models", "Tidal.GoogleMaps.Models\Tidal.GoogleMaps.Models.csproj", "{ED74EC25-5671-46CD-A810-DA6D07D1F695}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5} = {3EC98299-B956-403B-ABA2-DB199CB24EC5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +43,30 @@ Global
 		{6A928253-AB7A-4563-8928-94B62731B3E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A928253-AB7A-4563-8928-94B62731B3E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A928253-AB7A-4563-8928-94B62731B3E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2ABB8EE-8066-4447-A16F-03C5E4BDE46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2ABB8EE-8066-4447-A16F-03C5E4BDE46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2ABB8EE-8066-4447-A16F-03C5E4BDE46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2ABB8EE-8066-4447-A16F-03C5E4BDE46C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725061F9-DD59-48DB-AC82-9B93962953F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725061F9-DD59-48DB-AC82-9B93962953F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725061F9-DD59-48DB-AC82-9B93962953F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725061F9-DD59-48DB-AC82-9B93962953F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC98299-B956-403B-ABA2-DB199CB24EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16501CE-C2D5-4085-9656-FBF0D67A0DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16501CE-C2D5-4085-9656-FBF0D67A0DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16501CE-C2D5-4085-9656-FBF0D67A0DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16501CE-C2D5-4085-9656-FBF0D67A0DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775AB219-5608-4BA3-B35D-25A2E09E6705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775AB219-5608-4BA3-B35D-25A2E09E6705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775AB219-5608-4BA3-B35D-25A2E09E6705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775AB219-5608-4BA3-B35D-25A2E09E6705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED74EC25-5671-46CD-A810-DA6D07D1F695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED74EC25-5671-46CD-A810-DA6D07D1F695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED74EC25-5671-46CD-A810-DA6D07D1F695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED74EC25-5671-46CD-A810-DA6D07D1F695}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
